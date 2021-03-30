@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% include 'header.html' %}
+{% block title %} homepage {% endblock %}
+{%block body%}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col md-12">
+
+            <div class="jumbotron p-3">
+
+                <form action="/" method="POST">
+                    <a href="/login" class="btn btn-dark btn-lg float-right " role="button" aria-pressed="true">Log In</a>
+                </form>  
+                
+                 <form action="/" method="POST">
+                    <a href="/signup" class="btn btn-dark btn-lg" role="button" aria-pressed="true">Sign Up</a>
+                 </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
